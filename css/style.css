@@ -19,18 +19,29 @@
 .main_banner {
   background-image: url("../images/background.jpg");
   background-repeat: repeat-x;
-  height: 100vh;
   background-size: contain;
+  height: 100vh;
+}
+@media screen and (max-width: 767px) {
+  .main_banner {
+    padding-top: 95px;
+  }
 }
 .main_banner .container .row {
   height: 100vh;
+}
+@media screen and (max-width: 767px) {
+  .main_banner .container .row {
+    height: 100%;
+  }
 }
 .main_banner .container .row .main_banner_text h1 {
   font: 88px/70px "Asap", sans-serif;
   font-weight: 500;
   color: #4d4d4d;
+  text-align: left;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 767px) {
   .main_banner .container .row .main_banner_text h1 {
     font-size: 40px;
   }
@@ -40,7 +51,7 @@
   font-weight: 500;
   color: #9a9a9a;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 767px) {
   .main_banner .container .row .main_banner_text p {
     font-size: 18px;
   }
@@ -48,6 +59,7 @@
 .main_banner .container .row .main_banner_text .btn-outline-secondary {
   border-radius: 0;
   font: 16px "Asap", sans-serif;
+  padding: 20px 30px;
   font-weight: 500;
   color: #4d4d4d;
 }
@@ -59,11 +71,200 @@
   box-shadow: 8px 18px 29px 0px rgba(0, 0, 0, 0.1);
 }
 .main_banner .container .row .luis_man {
-  max-height: 650px;
+  height: 700px;
+}
+@media screen and (max-width: 767px) {
+  .main_banner .container .row .luis_man {
+    height: 100vh;
+  }
 }
 .main_banner .container .row .luis_man img {
   display: block;
+}
+@media screen and (max-width: 767px) {
+  .main_banner .container .row .luis_man img {
+    display: none;
+  }
+}
+
+.know_more {
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+@media screen and (max-width: 767px) {
+  .know_more {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+}
+.know_more .container .row .know_more_text h3 {
+  font: 46px/50px "Asap", sans-serif;
+  font-weight: 400;
+  color: #7a7a7a;
+  text-align: left;
+}
+@media screen and (max-width: 767px) {
+  .know_more .container .row .know_more_text h3 {
+    font-size: 30px;
+  }
+}
+.know_more .container .row .know_more_text h3:before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  margin-bottom: 10px;
+  background-color: #7a7a7a;
+}
+.know_more .container .row .know_more_text p {
+  font: 16px/25px "Asap", sans-serif;
+  color: #7a7a7a;
+}
+@media screen and (max-width: 767px) {
+  .know_more .container .row .know_more_text p {
+    font-size: 13px;
+  }
+}
+.know_more .container .row .know_more_text .btn-outline-secondary {
+  border-radius: 0;
+  font: 16px "Asap", sans-serif;
+  padding: 20px 30px;
+  font-weight: 500;
+  color: #4d4d4d;
+}
+.know_more .container .row .know_more_text .btn-outline-secondary:hover {
+  background-color: #ffffff;
+  border: #ffffff;
+  -webkit-box-shadow: 8px 18px 29px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 8px 18px 29px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 8px 18px 29px 0px rgba(0, 0, 0, 0.1);
+}
+.know_more .container .row .know_more_img {
+  height: 444px;
+}
+@media screen and (max-width: 767px) {
+  .know_more .container .row .know_more_img {
+    padding-top: 55px;
+  }
+}
+.know_more .container .row .know_more_img img {
+  display: block;
   width: 100%;
+}
+
+.services {
+  background-color: #f6f6f6;
+  padding-bottom: 110px;
+}
+@media screen and (max-width: 767px) {
+  .services {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+}
+.services .container .row {
+  width: 100%;
+}
+.services .container .row h3 {
+  font: 46px "Asap", sans-serif;
+  color: #787878;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+.services .container .row h3:before {
+  content: "";
+  display: block;
+  margin: auto;
+  width: 60px;
+  height: 4px;
+  margin-bottom: 10px;
+  background-color: #7a7a7a;
+}
+.services .container .row div a {
+  display: block;
+}
+.services .container .row div a .services_img {
+  display: block;
+  height: 80px;
+}
+.services .container .row div p {
+  font: 24px "Asap", sans-serif;
+  color: #4d4d4d;
+  font-weight: 500;
+}
+
+.my_skills {
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+@media screen and (max-width: 767px) {
+  .my_skills {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+}
+.my_skills .container .row div h3 {
+  font: 46px "Asap", sans-serif;
+  color: #787878;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+.my_skills .container .row div h3:before {
+  content: "";
+  display: block;
+  margin: auto;
+  width: 60px;
+  height: 4px;
+  margin-bottom: 10px;
+  background-color: #7a7a7a;
+}
+.my_skills .container .row .my_skills_img img {
+  height: 310px;
+}
+
+.portfolio {
+  background-color: #f6f6f6;
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+@media screen and (max-width: 767px) {
+  .portfolio {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+}
+.portfolio .container .row {
+  width: 100%;
+}
+.portfolio .container .row h3 {
+  font: 46px "Asap", sans-serif;
+  color: #787878;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+.portfolio .container .row h3:before {
+  content: "";
+  display: block;
+  margin: auto;
+  width: 60px;
+  height: 4px;
+  margin-bottom: 10px;
+  background-color: #7a7a7a;
+}
+.portfolio .container .row .portfolio_img ul li {
+  display: inline-flex;
+}
+.portfolio .container .row .portfolio_img ul li:hover {
+  -webkit-box-shadow: 0px 0px 40px -2px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 0px 40px -2px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 40px -2px rgba(0, 0, 0, 0.4);
+}
+.portfolio .container .row .portfolio_img ul li a {
+  display: block;
+}
+.portfolio .container .row .portfolio_img ul li a img {
+  width: 366px;
+  height: 318px;
 }
 
 /*# sourceMappingURL=style.css.map */

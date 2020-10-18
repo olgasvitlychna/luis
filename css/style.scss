@@ -39,19 +39,27 @@ $main_font_color: #4d4d4d;
 .main_banner {
   background-image: url("../images/background.jpg");
   background-repeat: repeat-x;
-  height: 100vh;
   background-size: contain;
+  height: 100vh;
+  @include max-screen(767px) {
+    padding-top: 95px;
+  }
 
   .container {
     .row {
       height: 100vh;
+      @include max-screen(767px) {
+        height: 100%;
+      }
 
       .main_banner_text {
+
         h1 {
           font: 88px/70px $font_family;
           font-weight: 500;
           color: #4d4d4d;
-          @include max-screen(991px) {
+          text-align: left;
+          @include max-screen(767px) {
             font-size: 40px;
           }
         }
@@ -60,7 +68,7 @@ $main_font_color: #4d4d4d;
           font: 22px $font_family;
           font-weight: 500;
           color: #9a9a9a;
-          @include max-screen(991px) {
+          @include max-screen(767px) {
             font-size: 18px;
           }
         }
@@ -68,9 +76,88 @@ $main_font_color: #4d4d4d;
         .btn-outline-secondary {
           border-radius: 0;
           font: 16px $font_family;
+          padding: 20px 30px;
           font-weight: 500;
           color: $main_font_color;
-          &:hover{
+
+          &:hover {
+            background-color: #ffffff;
+            border: #ffffff;
+            -webkit-box-shadow: 8px 18px 29px 0px rgba(0, 0, 0, 0.1);
+            -moz-box-shadow: 8px 18px 29px 0px rgba(0, 0, 0, 0.1);
+            box-shadow: 8px 18px 29px 0px rgba(0, 0, 0, 0.1);
+
+          }
+
+        }
+      }
+
+      .luis_man {
+        height: 700px;
+        @include max-screen(767px) {
+          height: 100vh;
+
+        }
+
+        img {
+          display: block;
+          @include max-screen(767px) {
+            display: none;
+            //max-height: 75vh;
+          }
+        }
+      }
+    }
+  }
+}
+
+.know_more {
+  padding-top: 110px;
+  padding-bottom: 110px;
+  @include max-screen(767px) {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  .container {
+    .row {
+      .know_more_text {
+
+        h3 {
+          font: 46px/50px $font_family;
+          font-weight: 400;
+          color: #7a7a7a;
+          text-align: left;
+          @include max-screen(767px) {
+            font-size: 30px;
+          }
+
+          &:before {
+            content: "";
+            display: block;
+            width: 60px;
+            height: 2px;
+            margin-bottom: 10px;
+            background-color: #7a7a7a;
+          }
+        }
+
+        p {
+          font: 16px/25px $font_family;
+          color: #7a7a7a;
+          @include max-screen(767px) {
+            font-size: 13px;
+          }
+        }
+
+        .btn-outline-secondary {
+          border-radius: 0;
+          font: 16px $font_family;
+          padding: 20px 30px;
+          font-weight: 500;
+          color: $main_font_color;
+
+          &:hover {
             background-color: #ffffff;
             border: #ffffff;
             -webkit-box-shadow: 8px 18px 29px 0px rgba(0, 0, 0, 0.1);
@@ -79,14 +166,164 @@ $main_font_color: #4d4d4d;
 
           }
         }
+
+
       }
 
-      .luis_man {
-        max-height: 650px;
+      .know_more_img {
+        height: 444px;
+        @include max-screen(767px) {
+          padding-top: 55px;
+        }
 
         img {
           display: block;
           width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.services {
+  background-color: #f6f6f6;
+
+  padding-bottom: 110px;
+  @include max-screen(767px) {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  .container {
+    .row {
+      width: 100%;
+
+      h3 {
+        font: 46px $font_family;
+        color: #787878;
+        font-weight: 700;
+        letter-spacing: 3px;
+
+        &:before {
+          content: "";
+          display: block;
+          margin: auto;
+          width: 60px;
+          height: 4px;
+          margin-bottom: 10px;
+          background-color: #7a7a7a;
+        }
+      }
+
+      div {
+        a {
+          display: block;
+
+          .services_img {
+            display: block;
+            height: 80px;
+          }
+        }
+
+        p {
+          font: 24px $font_family;
+          color: $main_font_color;
+          font-weight: 500;
+        }
+
+      }
+    }
+  }
+}
+
+.my_skills {
+  padding-top: 110px;
+  padding-bottom: 110px;
+  @include max-screen(767px) {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  .container {
+    .row {
+      div {
+        h3 {
+          font: 46px $font_family;
+          color: #787878;
+          font-weight: 700;
+          letter-spacing: 3px;
+
+          &:before {
+            content: "";
+            display: block;
+            margin: auto;
+            width: 60px;
+            height: 4px;
+            margin-bottom: 10px;
+            background-color: #7a7a7a;
+          }
+        }
+      }
+
+      .my_skills_img {
+        img {
+          height: 310px;
+        }
+      }
+    }
+  }
+}
+
+.portfolio {
+  background-color: #f6f6f6;
+  padding-top: 110px;
+  padding-bottom: 110px;
+  @include max-screen(767px) {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  .container {
+    .row {
+      width: 100%;
+
+      h3 {
+        font: 46px $font_family;
+        color: #787878;
+        font-weight: 700;
+        letter-spacing: 3px;
+
+        &:before {
+          content: "";
+          display: block;
+          margin: auto;
+          width: 60px;
+          height: 4px;
+          margin-bottom: 10px;
+          background-color: #7a7a7a;
+        }
+      }
+
+      .portfolio_img {
+        ul {
+          li {
+            display: inline-flex;
+
+            &:hover {
+              -webkit-box-shadow: 0px 0px 40px -2px rgba(0, 0, 0, 0.4);
+              -moz-box-shadow: 0px 0px 40px -2px rgba(0, 0, 0, 0.4);
+              box-shadow: 0px 0px 40px -2px rgba(0, 0, 0, 0.4);
+            }
+
+            a {
+              display: block;
+              img {
+                width: 366px;
+                height: 318px;
+              }
+
+            }
+          }
         }
       }
     }
