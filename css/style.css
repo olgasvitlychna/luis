@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+@import "normalize.css";
+.nav-link {
+  color: #4d4d4d;
+  font: 16px "Asap", sans-serif;
+}
+.nav-link:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  margin-top: 10px;
+  background-color: #4d4d4d;
+}
+.nav-link:hover:after {
+  width: 100%;
+}
+
+.main_banner {
+  background-image: url("../images/background.jpg");
+  background-repeat: repeat-x;
+  height: 100vh;
+  background-size: contain;
+}
+.main_banner .container .row {
+  height: 100vh;
+}
+.main_banner .container .row .main_banner_text h1 {
+  font: 88px/70px "Asap", sans-serif;
+  font-weight: 500;
+  color: #4d4d4d;
+}
+@media screen and (max-width: 991px) {
+  .main_banner .container .row .main_banner_text h1 {
+    font-size: 40px;
+  }
+}
+.main_banner .container .row .main_banner_text p {
+  font: 22px "Asap", sans-serif;
+  font-weight: 500;
+  color: #9a9a9a;
+}
+@media screen and (max-width: 991px) {
+  .main_banner .container .row .main_banner_text p {
+    font-size: 18px;
+  }
+}
+.main_banner .container .row .main_banner_text .btn-outline-secondary {
+  border-radius: 0;
+  font: 16px "Asap", sans-serif;
+  font-weight: 500;
+  color: #4d4d4d;
+}
+.main_banner .container .row .main_banner_text .btn-outline-secondary:hover {
+  background-color: #ffffff;
+  border: #ffffff;
+  -webkit-box-shadow: 8px 18px 29px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 8px 18px 29px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 8px 18px 29px 0px rgba(0, 0, 0, 0.1);
+}
+.main_banner .container .row .luis_man {
+  max-height: 650px;
+}
+.main_banner .container .row .luis_man img {
+  display: block;
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */

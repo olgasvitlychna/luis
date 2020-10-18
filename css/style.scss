@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+@import "normalize.css";
+
+
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
+
+//@include max-screen(767px) {
+//        order: 2;
+//      }
+
+$font_family: 'Asap', sans-serif;
+$main_font_color: #4d4d4d;
+
+
+.nav-link {
+
+  color: $main_font_color;
+  font: 16px $font_family;
+
+  &:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    margin-top: 10px;
+    background-color: $main_font_color;
+  }
+
+  &:hover:after {
+    width: 100%;
+  }
+}
+
+
+.main_banner {
+  background-image: url("../images/background.jpg");
+  background-repeat: repeat-x;
+  height: 100vh;
+  background-size: contain;
+
+  .container {
+    .row {
+      height: 100vh;
+
+      .main_banner_text {
+        h1 {
+          font: 88px/70px $font_family;
+          font-weight: 500;
+          color: #4d4d4d;
+          @include max-screen(991px) {
+            font-size: 40px;
+          }
+        }
+
+        p {
+          font: 22px $font_family;
+          font-weight: 500;
+          color: #9a9a9a;
+          @include max-screen(991px) {
+            font-size: 18px;
+          }
+        }
+
+        .btn-outline-secondary {
+          border-radius: 0;
+          font: 16px $font_family;
+          font-weight: 500;
+          color: $main_font_color;
+          &:hover{
+            background-color: #ffffff;
+            border: #ffffff;
+            -webkit-box-shadow: 8px 18px 29px 0px rgba(0, 0, 0, 0.1);
+            -moz-box-shadow: 8px 18px 29px 0px rgba(0, 0, 0, 0.1);
+            box-shadow: 8px 18px 29px 0px rgba(0, 0, 0, 0.1);
+
+          }
+        }
+      }
+
+      .luis_man {
+        max-height: 650px;
+
+        img {
+          display: block;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
