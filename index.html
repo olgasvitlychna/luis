@@ -8,8 +8,9 @@
     <title>Luis Oenrique</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
-          rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+
 
 </head>
 <body>
@@ -50,7 +51,7 @@
         </div>
     </div>
 </header>
-<section class="main_banner">
+<section class="main_banner" id="ex1">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-12 col-sm-6 main_banner_text">
@@ -150,23 +151,195 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-12 col-sm-6 col-md-4 portfolio_img d-flex">
-                <div><img src="images/portfolio1_03.jpg" height="318" width="366"/></div>
-                <div><img src="images/portfolio2_05.jpg" height="318" width="368"/></div>
-                <div><img src="images/portfolio3_07.jpg" height="318" width="368"/></div>
-                <div><img src="images/portgolio4_12.jpg" height="319" width="366"/></div>
-                <div><img src="images/portfolio5_13.jpg" height="317" width="371"/></div>
-                <div><img src="images/portfolio6_15.jpg" height="317" width="368"/></div>
+            <div class="col-12 col-sm-6 col-md-4   d-flex justify-content-between portfolio_img mb-3">
+                <a href=""><img src="images/portfolio1_03.jpg"/></a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 d-flex portfolio_img">
+                <a href=""> <img src="images/portfolio2_05.jpg"/></a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 d-flex portfolio_img">
+                <a href=""><img src="images/portfolio3_07.jpg"/></a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 d-flex  portfolio_img">
+                <a href=""><img src="images/portgolio4_12.jpg"/></a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 d-flex  portfolio_img">
+                <a href=""><img src="images/portfolio5_13.jpg"/></a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 d-flex  portfolio_img">
+                <a href=""><img src="images/portfolio6_15.jpg"/></a>
+            </div>
+        </div>
+        <!--collapse------------------------------------------------>
+
+        <div class="row">
+
+            <div class="col-12" id="accordion">
+                <div class="card mt-5">
+
+                    <div id="collapseThree" class="collapse " aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body d-flex">
+                            <div class="col-12 col-sm-6 col-md-4 d-flex  portfolio_img">
+                                <a href=""><img src="images/portgolio4_12.jpg"/></a>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 d-flex  portfolio_img">
+                                <a href=""><img src="images/portfolio5_13.jpg"/></a>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 d-flex  portfolio_img">
+                                <a href=""><img src="images/portfolio6_15.jpg"/></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-header d-flex justify-content-center" id="headingOne">
+                        <div class="mb-0 d-flex justify-content-center">
+                            <button class="btn btn-outline-secondary  text-uppercase" data-toggle="collapse"
+                                    data-target="#collapseThree"
+                                    aria-expanded="false" aria-controls="collapseThree">
+                                load more
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<section class="testimonials">
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 mb-5">
+                <h3 class="text-center text-uppercase">testimonials</h3>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-10 hhhhhhh d-flex justify-content-center align-items-center">
+                <div class="owl-carousel ">
+                    <div class="row owl_container justify-content-between">
+                        <div class=" col-12 col-sm-3 owl_container_img">
+                            <img class="d-block w-100" src="images/testimonials_person_17.jpg"/>
+                        </div>
+                        <div class="col-12 col-sm-9 owl_container_text">
+                            <h4 class="text-uppercase">Limara tusi </h4>
+                            <h5 class="text-uppercase font-italic">CEO, Random company</h5>
+                            <p class="text-uppercase">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
+                                explicabo fugiat, molestiae quidem quo ratione veniam. Aperiam earum minima provident?
+                                Cum dicta doloribus fuga iste quidem quo rem sit voluptas.</p>
+                        </div>
+                    </div>
+                    <div class="row owl_container justify-content-between">
+                        <div class=" col-3 owl_container_img">
+                            <img class="d-block w-100" src="images/testimonials_person_17.jpg"/>
+                        </div>
+                        <div class="col-9 owl_container_text">
+                            <h4 class="text-uppercase">Limara tusi </h4>
+                            <h5 class="text-uppercase font-italic">CEO, Random company</h5>
+                            <p class="text-uppercase">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
+                                explicabo fugiat, molestiae quidem quo ratione veniam. Aperiam earum minima provident?
+                                Cum dicta doloribus fuga iste quidem quo rem sit voluptas.</p>
+                        </div>
+                    </div>
+                    <div class="row owl_container justify-content-between">
+                        <div class=" col-3 owl_container_img">
+                            <img class="d-block w-100" src="images/testimonials_person_17.jpg"/>
+                        </div>
+                        <div class="col-9 owl_container_text">
+                            <h4 class="text-uppercase">Limara tusi </h4>
+                            <h5 class="text-uppercase font-italic">CEO, Random company</h5>
+                            <p class="text-uppercase">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
+                                explicabo fugiat, molestiae quidem quo ratione veniam. Aperiam earum minima provident?
+                                Cum dicta doloribus fuga iste quidem quo rem sit voluptas.</p>
+                        </div>
+                    </div>
+                    <div class="row owl_container justify-content-between">
+                        <div class=" col-3 owl_container_img">
+                            <img class="d-block w-100" src="images/testimonials_person_17.jpg"/>
+                        </div>
+                        <div class="col-9 owl_container_text">
+                            <h4 class="text-uppercase">Limara tusi </h4>
+                            <h5 class="text-uppercase font-italic">CEO, Random company</h5>
+                            <p class="text-uppercase">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
+                                explicabo fugiat, molestiae quidem quo ratione veniam. Aperiam earum minima provident?
+                                Cum dicta doloribus fuga iste quidem quo rem sit voluptas.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-3 text-center">
+
+                <img class=" mb-3" src="images/1.png"/>
+                <h5 class="timer count-title count-number" data-to="120" data-speed="1500">0</h5>
+                <p>happy client</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 text-center">
+                <img class=" mb-3" src="images/2.png"/>
+                <h5 class="timer count-title count-number" data-to="310" data-speed="1500">0</h5>
+                <p>happy client</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 text-center">
+                <img class=" mb-3" src="images/3.png"/>
+                <h5 class="timer count-title count-number" data-to="510" data-speed="1500">0</h5>
+                <p>Finished Project</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 text-center">
+                <img class=" mb-3" src="images/4.png"/>
+                <h5 class="timer count-title count-number" data-to="720" data-speed="1500">0</h5>
+                <p>hands to work</p>
+            </div>
+        </div>
+    </div>
+
 </section>
 
+<footer>
 
-<script src="https://kit.fontawesome.com/4c0df98d8e.js" crossorigin="anonymous"></script>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-12 ">
+                <h3 class="text-center text-uppercase">say hello</h3>
+            </div>
+        </div>
+        <form>
+            <div class="form-row justify-content-center">
+                <div class="col-8 col-sm-4">
+                    <input type="text" class="form-control" placeholder="First name">
+                </div>
+                <div class="col-8 col-sm-4">
+                    <input type="text" class="form-control" placeholder="First name">
+                </div>
+                <div class="col-8">
+                    <input type="text" class="form-control" placeholder="Last name">
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-4 col-sm-3">
+                    <<a class="btn btn-outline-secondary  text-uppercase mr-3" href="#">download my sv</a>
+                </div>
+            </div>
+        </form>
+
+
+    </div>
+</footer>
+<a href="#ex1">Link #1</a>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
+
+<script src="https://kit.fontawesome.com/4c0df98d8e.js" crossorigin="anonymous"></script>
+
+<script src="js/owl.carousel.min.js"></script>
+
+<script src="js/script.js"></script>
 </body>
 </html>
