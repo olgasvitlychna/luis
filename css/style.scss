@@ -43,13 +43,21 @@ $main_font_color: #4d4d4d;
   height: 100vh;
   @include max-screen(767px) {
     padding-top: 95px;
+    background-size: 100%;
+    background-size: cover;
   }
 
+
   .container {
+    @include max-screen(767px) {
+
+    }
     .row {
       height: 100vh;
       @include max-screen(767px) {
         height: 100%;
+        display: flex;
+        justify-content: center !important;
       }
 
       .main_banner_text {
@@ -88,14 +96,17 @@ $main_font_color: #4d4d4d;
             box-shadow: 8px 18px 29px 0px rgba(0, 0, 0, 0.1);
 
           }
-
+          @include max-screen(320px) {
+            margin-bottom:  15px;
+            background-size: 100%;
+          }
         }
       }
 
       .luis_man {
         height: 700px;
         @include max-screen(767px) {
-          height: 100vh;
+
 
         }
 
@@ -110,6 +121,9 @@ $main_font_color: #4d4d4d;
     }
   }
 }
+
+//--know_more------------------------------------------------>
+
 
 .know_more {
   padding-top: 110px;
@@ -145,6 +159,8 @@ $main_font_color: #4d4d4d;
         p {
           font: 16px/25px $font_family;
           color: #7a7a7a;
+          height: 120px;
+          overflow-x: hidden;
           @include max-screen(767px) {
             font-size: 13px;
           }
@@ -184,6 +200,8 @@ $main_font_color: #4d4d4d;
     }
   }
 }
+
+//services----------------------------------------------
 
 .services {
   background-color: #f6f6f6;
@@ -247,6 +265,8 @@ $main_font_color: #4d4d4d;
     }
   }
 }
+
+//my skills--------------------------------------------
 
 .my_skills {
   padding-top: 110px;
@@ -334,6 +354,9 @@ $main_font_color: #4d4d4d;
   }
 }
 
+//testimonials----------------------------------->
+
+
 .testimonials {
   padding-top: 110px;
   padding-bottom: 110px;
@@ -367,8 +390,7 @@ $main_font_color: #4d4d4d;
           justify-content: space-between;
         }
       }
-
-      .hhhhhhh {
+      .for_carousel {
         border: 1px solid black;
         height: 350px;
         padding-left: 80px;
@@ -381,15 +403,17 @@ $main_font_color: #4d4d4d;
             background-color: $main_font_color;
           }
         }
+        .owl_carousel{
+          .owl_container_text {
 
-        .owl_container_text {
-
-          p {
-            overflow-x: hidden;
-            overflow-y: auto;
-            height: 100px;
+            p {
+              overflow-x: hidden;
+              overflow-y: auto;
+              height: 100px;
+            }
           }
         }
+
 
         .owl-dots {
           display: flex;
@@ -413,27 +437,31 @@ $main_font_color: #4d4d4d;
       }
     }
   }
+.counter{
+  background-color: #f6f6f6;
+  .container_counter {
 
-  .container-fluid {
-    background-color: #f6f6f6;
     padding: 65px 0;
     margin-top: 110px;
     @include max-screen(767px) {
       margin-top: 55px;
     }
+
     img {
       width: 80px;
     }
   }
 }
+}
 
-footer{
-  background-image: url("../images/footerBG_03.jpg");
+footer {
+  background-image: url("../images/bgFooter.jpg");
+  background-size: cover;
   padding-top: 110px;
-  padding-bottom: 110px;
+  padding-bottom: 50px;
   @include max-screen(767px) {
     padding-top: 55px;
-    padding-bottom: 55px;
+    padding-bottom: 15px;
   }
 
   .container {
@@ -457,5 +485,110 @@ footer{
         }
       }
     }
+
+    form {
+      div {
+        div {
+          input {
+            border: none;
+            border-radius: 0;
+          }
+
+          textarea {
+            border: none;
+            border-radius: 0;
+            height: 210px;
+            resize: none;
+          }
+        }
+
+      }
+      .row{
+        div{
+          button{
+            background-color: white;
+
+          }
+        }
+      }
+    }
+  }
+  .social{
+    border-top: 1px solid white;
+    .social_icon{
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      height: 27px;
+      width: 27px;
+      background-color: #fff;
+      transition: .2s linear;
+      text-decoration: none;
+
+      margin-right: 5px;
+
+      &:hover i {
+        color: #fff;
+        cursor: pointer;
+      }
+
+      i {
+        font-size: 15px;
+        color: #4d4d4d;
+        opacity: .9;
+      }
+    }
+
+    .icon-fb:hover {
+      background-color: #3b5997;
+    }
+    .icon-tw:hover {
+      background-color: #3ec2f3;
+    }
+    .icon-in:hover {
+      background-color: #0e76a8;
+    }
+    .icon-gp:hover {
+      background-color: #e44c41;
+    }
+    .icon-be:hover {
+      background-color: #053eff;
+    }
+    .icon-db:hover {
+      background-color: #ea4c89;
+    }
+    div{
+      p{
+        font-size: 16px;
+        color: white;
+        font-family: $font_family;
+      }
+    }
+  }
+}
+
+.back-to-top {
+  width: 47px;
+  height: 47px;
+  line-height: 47px;
+  display: block;
+  position: fixed;
+  right: 30px;
+  background: white;
+  bottom: 100px;
+  text-align: center;
+  color: $font_family;
+  z-index: 1;
+  -webkit-box-shadow: 8px 18px 29px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 8px 18px 29px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 8px 18px 29px 0px rgba(0, 0, 0, 0.1);
+  margin: 10px 20px 10px 0;
+
+  &:hover{
+    transform: scale(1.1);
+  }
+  @include max-screen(767px){
+    right: 0px;
+    bottom: 10px;
   }
 }

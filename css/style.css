@@ -26,6 +26,8 @@
 @media screen and (max-width: 767px) {
   .main_banner {
     padding-top: 95px;
+    background-size: 100%;
+    background-size: cover;
   }
 }
 .main_banner .container .row {
@@ -34,6 +36,8 @@
 @media screen and (max-width: 767px) {
   .main_banner .container .row {
     height: 100%;
+    display: flex;
+    justify-content: center !important;
   }
 }
 .main_banner .container .row .main_banner_text h1 {
@@ -71,13 +75,14 @@
   -moz-box-shadow: 8px 18px 29px 0px rgba(0, 0, 0, 0.1);
   box-shadow: 8px 18px 29px 0px rgba(0, 0, 0, 0.1);
 }
+@media screen and (max-width: 320px) {
+  .main_banner .container .row .main_banner_text .btn-outline-secondary {
+    margin-bottom: 15px;
+    background-size: 100%;
+  }
+}
 .main_banner .container .row .luis_man {
   height: 700px;
-}
-@media screen and (max-width: 767px) {
-  .main_banner .container .row .luis_man {
-    height: 100vh;
-  }
 }
 .main_banner .container .row .luis_man img {
   display: block;
@@ -120,6 +125,8 @@
 .know_more .container .row .know_more_text p {
   font: 16px/25px "Asap", sans-serif;
   color: #7a7a7a;
+  height: 120px;
+  overflow-x: hidden;
 }
 @media screen and (max-width: 767px) {
   .know_more .container .row .know_more_text p {
@@ -299,66 +306,69 @@
   display: flex;
   justify-content: space-between;
 }
-.testimonials .container .row .hhhhhhh {
+.testimonials .container .row .for_carousel {
   border: 1px solid black;
   height: 350px;
   padding-left: 80px;
   padding-right: 80px;
 }
 @media screen and (max-width: 767px) {
-  .testimonials .container .row .hhhhhhh {
+  .testimonials .container .row .for_carousel {
     height: auto;
     padding: 10px;
   }
-  .testimonials .container .row .hhhhhhh .owl_container_img {
+  .testimonials .container .row .for_carousel .owl_container_img {
     margin-bottom: 10px;
     background-color: #4d4d4d;
   }
 }
-.testimonials .container .row .hhhhhhh .owl_container_text p {
+.testimonials .container .row .for_carousel .owl_carousel .owl_container_text p {
   overflow-x: hidden;
   overflow-y: auto;
   height: 100px;
 }
-.testimonials .container .row .hhhhhhh .owl-dots {
+.testimonials .container .row .for_carousel .owl-dots {
   display: flex;
   justify-content: center;
 }
-.testimonials .container .row .hhhhhhh .owl-dots .owl-dot {
+.testimonials .container .row .for_carousel .owl-dots .owl-dot {
   height: 16px;
   width: 16px;
   border: 1px solid black;
   margin-right: 3px;
 }
-.testimonials .container .row .hhhhhhh .owl-dots .owl-dot:last-child {
+.testimonials .container .row .for_carousel .owl-dots .owl-dot:last-child {
   margin-right: 0;
 }
-.testimonials .container .row .hhhhhhh .owl-dots .owl-dot.active {
+.testimonials .container .row .for_carousel .owl-dots .owl-dot.active {
   background-color: black;
 }
-.testimonials .container-fluid {
+.testimonials .counter {
   background-color: #f6f6f6;
+}
+.testimonials .counter .container_counter {
   padding: 65px 0;
   margin-top: 110px;
 }
 @media screen and (max-width: 767px) {
-  .testimonials .container-fluid {
+  .testimonials .counter .container_counter {
     margin-top: 55px;
   }
 }
-.testimonials .container-fluid img {
+.testimonials .counter .container_counter img {
   width: 80px;
 }
 
 footer {
-  background-image: url("../images/footerBG_03.jpg");
+  background-image: url("../images/bgFooter.jpg");
+  background-size: cover;
   padding-top: 110px;
-  padding-bottom: 110px;
+  padding-bottom: 50px;
 }
 @media screen and (max-width: 767px) {
   footer {
     padding-top: 55px;
-    padding-bottom: 55px;
+    padding-bottom: 15px;
   }
 }
 footer .container .row div h3 {
@@ -375,6 +385,92 @@ footer .container .row div h3:before {
   height: 4px;
   margin-bottom: 10px;
   background-color: #f0f0f0;
+}
+footer .container form div div input {
+  border: none;
+  border-radius: 0;
+}
+footer .container form div div textarea {
+  border: none;
+  border-radius: 0;
+  height: 210px;
+  resize: none;
+}
+footer .container form .row div button {
+  background-color: white;
+}
+footer .social {
+  border-top: 1px solid white;
+}
+footer .social .social_icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 27px;
+  width: 27px;
+  background-color: #fff;
+  transition: 0.2s linear;
+  text-decoration: none;
+  margin-right: 5px;
+}
+footer .social .social_icon:hover i {
+  color: #fff;
+  cursor: pointer;
+}
+footer .social .social_icon i {
+  font-size: 15px;
+  color: #4d4d4d;
+  opacity: 0.9;
+}
+footer .social .icon-fb:hover {
+  background-color: #3b5997;
+}
+footer .social .icon-tw:hover {
+  background-color: #3ec2f3;
+}
+footer .social .icon-in:hover {
+  background-color: #0e76a8;
+}
+footer .social .icon-gp:hover {
+  background-color: #e44c41;
+}
+footer .social .icon-be:hover {
+  background-color: #053eff;
+}
+footer .social .icon-db:hover {
+  background-color: #ea4c89;
+}
+footer .social div p {
+  font-size: 16px;
+  color: white;
+  font-family: "Asap", sans-serif;
+}
+
+.back-to-top {
+  width: 47px;
+  height: 47px;
+  line-height: 47px;
+  display: block;
+  position: fixed;
+  right: 30px;
+  background: white;
+  bottom: 100px;
+  text-align: center;
+  color: "Asap", sans-serif;
+  z-index: 1;
+  -webkit-box-shadow: 8px 18px 29px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 8px 18px 29px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 8px 18px 29px 0px rgba(0, 0, 0, 0.1);
+  margin: 10px 20px 10px 0;
+}
+.back-to-top:hover {
+  transform: scale(1.1);
+}
+@media screen and (max-width: 767px) {
+  .back-to-top {
+    right: 0px;
+    bottom: 10px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
